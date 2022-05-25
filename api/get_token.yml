@@ -1,0 +1,14 @@
+
+name: get_token
+variables:
+    corpid: ww85fc8a337d68c29f
+    corpsecret: -L8fjHHrSauoOuXn4ZMqXInzSmeUctZf150Dmz8Z03c
+request:
+    url: gettoken
+    method: GET
+    headers:
+    params:
+        corpid: $corpid
+        corpsecret: $corpsecret
+validate:
+    - eq: ["status_code", 200]

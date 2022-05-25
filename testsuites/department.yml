@@ -1,0 +1,17 @@
+
+config:
+    name: "department"
+
+
+testcases:
+-
+    name: department_list.yml
+    testcase: testcases/department_list.yml
+
+-
+    name: create_department.yml
+    testcase: testcases/create_department.yml
+
+-
+    name: delete_department.yml
+    testcase: testcases/delete_department.yml

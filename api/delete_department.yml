@@ -1,0 +1,13 @@
+
+name: delete_department
+variables:
+request:
+    url: department/delete
+    method: GET
+    headers:
+    params:
+        access_token: $access_token
+        id: $id
+
+validate:
+    - eq: ["status_code", 200]

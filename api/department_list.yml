@@ -1,0 +1,14 @@
+
+name: department_list
+variables:
+    id: 1
+request:
+    url: department/list
+    method: POST
+    headers:
+    params:
+      access_token: $access_token
+      id: $id
+
+validate:
+    - eq: ["status_code", 200]

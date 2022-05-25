@@ -1,0 +1,16 @@
+config:
+    name: "delete_department"
+    variables:
+      id: 29
+    base_url: "https://qyapi.weixin.qq.com/cgi-bin/"
+
+teststeps:
+-
+    name: get_token
+    api: api/get_token.yml
+    extract:
+        access_token: content.access_token
+
+-
+    name: delete_department
+    api: api/delete_department.yml

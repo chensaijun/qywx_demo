@@ -1,0 +1,16 @@
+config:
+    name: "create_department"
+    variables:
+      id: 1
+    base_url: "https://qyapi.weixin.qq.com/cgi-bin/"
+
+teststeps:
+-
+    name: get_token
+    api: api/get_token.yml
+    extract:
+        access_token: content.access_token
+
+-
+    name: create_department
+    api: api/create_department.yml
